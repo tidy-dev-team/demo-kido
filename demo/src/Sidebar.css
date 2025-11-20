@@ -1,0 +1,90 @@
+.kido-sidebar {
+  width: 260px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #111827;
+  min-height: 100vh;
+}
+
+.kido-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kido-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6b46ff,#8b5cf6);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.kido-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.create-btn {
+  background: #5b4bff;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+}
+.create-btn:hover { filter: brightness(.98) }
+
+.kido-nav {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #0f172a;
+  cursor: pointer;
+}
+.nav-item span { font-size: 15px }
+
+.nav-item .kido-icon svg { display: block }
+
+.nav-item.active {
+  background: rgba(91,75,255,0.12);
+  color: #5b4bff;
+}
+
+.kido-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .kido-sidebar { background: #111827; color: #e6eef8 }
+  .create-btn { background: #7c6bff }
+}

@@ -1,11 +1,15 @@
 import './App.css'
 import Sidebar from './Sidebar'
+import Layout from './Layout'
 
 function App() {
 
   return (
     <>
-      <Sidebar></Sidebar>
+      <div style={{ display: "flex", width: "100%"}}>
+        <Sidebar></Sidebar>
+        <Layout></Layout>
+      </div>
     </>
   )
 }

@@ -1,0 +1,123 @@
+.kido-layout {
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.kido-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kido-search-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.kido-search-input input {
+  width: 420px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6eef6;
+  background: #f8fafc;
+}
+
+.kido-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kido-user-details {
+  text-align: left;
+}
+
+.kido-user-name {
+  font-weight: 600;
+}
+
+.kido-user-sub {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.kido-section {
+  margin-top: 28px;
+}
+
+.kido-section-title {
+  font-size: 28px;
+  margin: 0 0 12px 0;
+}
+
+.kido-recent-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.kido-card {
+  width: 260px;
+  background: #fff;
+  border: 1px solid #e6eef6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(16,24,40,0.03);
+}
+
+.kido-card-header {
+  position: relative;
+}
+
+.kido-card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.kido-badge {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #e6eef6;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.kido-card-body {
+  padding: 12px;
+}
+
+.kido-file-title {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.kido-file-meta {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.kido-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+@media (max-width:800px) {
+  .kido-search-input input {
+    width: 200px;
+  }
+  
+  .kido-section-title {
+    font-size: 20px;
+  }
+}

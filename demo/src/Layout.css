@@ -111,6 +111,7 @@
   /* fixed 5 columns so every row has exactly 5 cards */
   grid-template-columns: repeat(5, 260px);
   gap: 18px;
+  max-width: 100%;
   justify-content: start;
   overflow-x: auto; /* allow horizontal scroll if viewport is too narrow */
 }

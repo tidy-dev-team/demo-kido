@@ -1,70 +1,45 @@
-import React from "react";
+import React from 'react'
+import './Avatar.css'
 
-type AvatarType = "picture" | "initials";
-type AvatarShape = "circle" | "rounded" | "square";
-type AvatarSize = "24" | "32" | "40" | "52" | "64";
+type AvatarSizeNumeric = number
+type AvatarShape = 'circle' | 'rounded' | 'square'
 
 interface AvatarProps {
-    type: AvatarType;
-    shape?: AvatarShape;
-    size?: AvatarSize;
-    imageUrl?: string;
-    initials?: string;
-    upperBadge?: boolean;
-    lowerBadge?: boolean;
-    outline?: boolean;
+  initials?: string
+  imageUrl?: string
+  size?: AvatarSizeNumeric | '24' | '32' | '40' | '52' | '64'
+  shape?: AvatarShape
+  alt?: string
+  type?: 'picture' | 'initials'
 }
 
-const sizeMap: Record<AvatarSize, string> = {
-    "24": "w-6 h-6 text-xs",
-    "32": "w-8 h-8 text-xs",
-    "40": "w-10 h-10 text-base",
-    "52": "w-13 h-13 text-base",
-    "64": "w-16 h-16 text-xl",
-};
+export default function Avatar({
+  initials = 'AA',
+  imageUrl,
+  size = 32,
+  shape = 'circle',
+  alt = 'Avatar',
+  type = 'initials',
+}: AvatarProps) {
+  // if size is one of the string tokens, map to numeric px values
+  const numericSize = typeof size === 'number' ? size : size === '24' ? 24 : size === '32' ? 32 : size === '40' ? 40 : size === '52' ? 52 : 64
 
-const shapeMap: Record<AvatarShape, string> = {
-    circle: "rounded-full",
-    rounded: "rounded-lg",
-    square: "rounded-none",
-};
+  const style: React.CSSProperties = {
+    width: numericSize,
+    height: numericSize,
+    borderRadius: shape === 'circle' ? '50%' : shape === 'rounded' ? '8px' : '2px',
+  }
 
-export const Avatar: React.FC<AvatarProps> = ({
-    type,
-    shape = "circle",
-    size = "40",
-    imageUrl,
-    initials,
-    upperBadge = false,
-    lowerBadge = false,
-    outline = false,
-}) => {
-    const sizeClasses = sizeMap[size];
-    const shapeClasses = shapeMap[shape];
-    const outlineClasses = outline ? "ring-2 ring-white" : "";
+  const showImage = type === 'picture' && imageUrl
 
-    return (
-        <div className={`relative ${sizeClasses}`}>
-            <div className={`relative inline-flex items-center justify-center ${sizeClasses} ${shapeClasses} bg-indigo-200 overflow-hidden ${outlineClasses}`}>
-                {type === "picture" && imageUrl ? (
-                    <img
-                        src={imageUrl}
-                        alt="Avatar"
-                        className={`object-cover ${sizeClasses} ${shapeClasses}`}
-                    />
-                ) : (
-                    <span className="font-medium text-indigo-700 select-none">
-                        {initials?.slice(0, 2).toUpperCase() || "?"}
-                    </span>
-                )}
-            </div>
-            {upperBadge && (
-                <div className="absolute -top-1 -right-1 size-2 bg-red-500 rounded-full"></div>
-            )}
-
-            {lowerBadge && (
-                <div className="absolute -bottom-1 -right-1 size-2 bg-green-500 rounded-full"></div>
-            )}
-        </div>
-    );
-};
+  return (
+    <div className="kido-avatar-root" style={style} title={alt}>
+      {showImage ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={imageUrl} alt={alt} style={style} />
+      ) : (
+        <span className="kido-avatar-initials" style={{ fontSize: Math.round(numericSize / 2.5) }}>{(initials || '?').slice(0,2).toUpperCase()}</span>
+      )}
+    </div>
+  )
+}

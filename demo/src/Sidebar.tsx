@@ -1,5 +1,6 @@
 import './Sidebar.css'
 import Button from './components/Button'
+import Avatar from './components/Avatar'
 import {
   HomeIcon,
   BellIcon,
@@ -17,7 +18,7 @@ export default function Sidebar() {
   return (
     <aside className="kido-sidebar" role="navigation" aria-label="Main">
       <div className="kido-top">
-        <div className="kido-avatar" title="User avatar">AA</div>
+        <Avatar initials="KS" size={32} />
         <div className="kido-title">Kido Drive</div>
       </div>
 

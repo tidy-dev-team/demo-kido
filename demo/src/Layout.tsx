@@ -53,7 +53,7 @@ export default function Layout() {
             <section className="kido-section">
                 <h2 className="kido-section-title">Recent uploads</h2>
                 <div className="kido-recent-row">
-                    {sampleImages.slice(0, 6).map((img, i) => (
+                    {sampleImages.slice(0, 5).map((img, i) => (
                         <FileCard key={i} src={img} title={`File-name.jpg`} date={`Last modified | Nov 19, 2025`} showBadge={true} />
                     ))}
                 </div>

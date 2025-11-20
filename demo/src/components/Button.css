@@ -28,7 +28,7 @@
 .kido-btn.size-m { padding: 10px 14px; font-size: 16px }
 
 .kido-btn.variant-contained { background: #5b4bff; color: #fff }
-.kido-btn.variant-contained:hover { filter: brightness(.96); transform: translateY(-1px) }
+.kido-btn.variant-contained:hover { filter: brightness(.96); }
 .kido-btn.variant-contained:active { transform: translateY(0); filter: brightness(.92) }
 
 .kido-btn.variant-ghost { background: transparent; color: #0f172a }

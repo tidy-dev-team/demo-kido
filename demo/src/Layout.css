@@ -108,9 +108,15 @@
 
 .kido-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  /* fixed 5 columns so every row has exactly 5 cards */
+  grid-template-columns: repeat(5, 260px);
   gap: 18px;
+  justify-content: start;
+  overflow-x: auto; /* allow horizontal scroll if viewport is too narrow */
 }
+
+/* ensure card widths match the grid column width */
+.kido-card { width: 260px }
 
 @media (max-width:800px) {
   .kido-search-input input {

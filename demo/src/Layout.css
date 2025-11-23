@@ -110,7 +110,7 @@
 
 .kido-grid {
   display: flex;
-  /* fixed 5 columns so every row has exactly 5 cards */
+  flex-direction: row-reverse;
   gap: 16px;
   max-width: 100%;
   justify-content: start;

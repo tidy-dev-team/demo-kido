@@ -1,173 +1,127 @@
+/* Sidebar layout and tokens derived from Figma node 14:269 */
 .kido-sidebar {
-  position: sticky;
-  top: 20px;
-  width: 260px;
-  background: #f3f4f6;
-  border-radius: 12px;
-  padding: 24px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  color: #111827;
-  min-height: calc(100vh - 40px);
-  height: calc(100vh - 40px);
+	width: 272px;
+	padding: 24px;
+	box-sizing: border-box;
+	background: #F3F5F6; /* rgb(0.9529,0.9569,0.9647) */
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	height: 100vh;
 }
 
 .kido-top {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.kido-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg,#6b46ff,#8b5cf6);
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 12px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
 }
 
 .kido-title {
-  font-weight: 500;
-  font-size: 14px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #0f172a;
 }
 
-.create-btn {
-  background: #5b4bff;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  width: 100%;
-  text-align: left;
-  font-weight: 600;
-  cursor: pointer;
+.kido-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
-.create-btn:hover {
-  filter: brightness(.98);
+.kido-controls .kido-btn.size-s.variant-contained {
+	height: 32px;
+	min-height: 32px;
+	border-radius: 8px;
+	padding: 0 12px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
 }
 
 .kido-nav {
-  list-style: none;
-  margin: 12px 0 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
-.nav-item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 10px 12px;
-  border-radius: 8px;
-  color: #0f172a;
-  cursor: pointer;
+.kido-nav li { margin: 0 }
+
+.kido-nav .kido-btn {
+	height: 32px;
+	min-height: 32px;
+	border-radius: 8px;
+	padding-left: 12px;
+	padding-right: 12px;
+	display: inline-flex;
+	align-items: center;
 }
 
-.nav-item span {
-  font-size: 15px;
+.kido-nav .kido-btn .hi-icon { width: 18px; height: 18px }
+
+.kido-nav .kido-btn .kido-btn-label { flex: 1 }
+
+.kido-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex: 1 1 auto;
+	justify-content: space-between;
 }
 
-.nav-item .kido-icon svg {
-  display: block;
-}
-
-.nav-item.active {
-  background: rgba(91,75,255,0.12);
-  color: #5b4bff;
-}
-
-.kido-icon {
-  width: 24px;
-  height: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-}
-
-@media (prefers-color-scheme:dark) {
-  .kido-sidebar {
-    background: #111827;
-    color: #e6eef8;
-  }
-  
-  .create-btn {
-    background: #7c6bff;
-  }
-}
-
-/* Footer / storage */
-.kido-footer {
-  margin-top: auto;
-}
+.kido-nav-bottom { margin-bottom: 8px }
 
 .kido-storage {
-  background: transparent;
-  padding-top: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
 .kido-storage-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
-.kido-storage-title { font-size: 12px; color: rgba(15,23,42,0.7); }
-.kido-storage-amount { font-size: 13px; font-weight: 600 }
+.kido-storage-title {
+	font-size: 14px;
+	font-weight: 500;
+	color: #0f172a;
+}
+
+.kido-storage-amount {
+	font-size: 14px;
+	font-weight: 600;
+	color: #0f172a;
+}
 
 .kido-storage-bar {
-  width: 100%;
-  height: 8px;
-  background: rgba(15,23,42,0.06);
-  border-radius: 999px;
-  overflow: hidden;
+	width: 100%;
+	height: 4px; /* thin progress track as in Figma */
+	background: rgba(15,23,42,0.06);
+	border-radius: 999px;
+	overflow: hidden;
 }
 
 .kido-storage-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #7c6bff, #5b4bff);
-  border-radius: 999px;
+	height: 100%;
+	background: rgb(97,95,255); /* #615FFF */
+	border-radius: 999px;
 }
 
-.kido-storage-meta { font-size: 12px; color: rgba(15,23,42,0.5); margin-top: 6px }
-
-@media (prefers-color-scheme: dark) {
-  .kido-storage-title { color: rgba(230,238,248,0.7) }
-  .kido-storage-meta { color: rgba(230,238,248,0.5) }
-  .kido-storage-bar { background: rgba(230,238,248,0.06) }
+.kido-storage-meta {
+	font-size: 10px;
+	color: #62748e; /* muted slate from Figma */
 }
 
-/* Bottom promo/upgrade card (approximation of Figma node 14:610) */
-.kido-bottom-card {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  background: linear-gradient(180deg, rgba(91,75,255,0.06), rgba(124,107,255,0.03));
-  border-radius: 12px;
-  padding: 12px;
-  margin-top: 16px;
+/* Small helpers */
+.hi-icon { width: 18px; height: 18px; display: inline-block }
+
+@media (max-width: 640px) {
+	.kido-sidebar { width: 240px }
 }
 
-.kido-card-icon { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; background: rgba(91,75,255,0.12); border-radius: 10px; color: #5b4bff }
-.kido-card-body { flex: 1; display:flex; flex-direction:column; gap:8px }
-.kido-card-title { font-weight:600; font-size:14px }
-.kido-card-desc { font-size:13px; color: rgba(15,23,42,0.6) }
-.kido-card-actions { display:flex; gap:8px; align-items:center }
-.kido-link { background: transparent; border: none; color: #5b4bff; font-weight:600; cursor:pointer; padding:6px 8px; border-radius:8px }
-
-@media (prefers-color-scheme: dark) {
-  .kido-bottom-card { background: linear-gradient(180deg, rgba(124,107,255,0.06), rgba(91,75,255,0.03)); }
-  .kido-card-desc { color: rgba(230,238,248,0.6) }
-  .kido-link { color: #cfc7ff }
-}

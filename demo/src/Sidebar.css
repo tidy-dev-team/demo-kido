@@ -70,12 +70,9 @@
 .kido-bottom {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   margin-top: auto; /* push this block to the bottom of the sidebar */
   justify-content: flex-end;
-  flex: 0 0 auto;
-  align-items: center;
-  width: 100%;
 }
 
 .kido-nav-bottom { margin-bottom: 8px }

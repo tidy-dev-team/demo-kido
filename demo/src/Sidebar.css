@@ -1,5 +1,7 @@
 /* Sidebar layout and tokens derived from Figma node 14:269 */
 .kido-sidebar {
+  position: sticky;
+  top: 20px;
 	width: 272px;
 	padding: 24px;
 	box-sizing: border-box;
@@ -8,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
-	height: 100vh;
+	height: calc(100vh - 40px);
 }
 
 .kido-top {
@@ -66,11 +68,11 @@
 .kido-nav .kido-btn .kido-btn-label { flex: 1 }
 
 .kido-bottom {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	flex: 1 1 auto;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: auto; /* push this block to the bottom of the sidebar */
+  justify-content: flex-end;
 }
 
 .kido-nav-bottom { margin-bottom: 8px }
@@ -79,6 +81,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+  padding: 0 14px;
 }
 
 .kido-storage-head {
@@ -105,12 +108,23 @@
 	background: rgba(15,23,42,0.06);
 	border-radius: 999px;
 	overflow: hidden;
+	display: flex; /* segmented track */
+	gap: 0;
 }
 
-.kido-storage-fill {
-	height: 100%;
-	background: rgb(97,95,255); /* #615FFF */
-	border-radius: 999px;
+.kido-storage-seg {
+  flex: 1 1 0;
+  position: relative;
+  min-width: 0; /* ensure fills truncate correctly */
+}
+
+.kido-storage-seg-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  background: rgb(97,95,255); /* #615FFF */
 }
 
 .kido-storage-meta {

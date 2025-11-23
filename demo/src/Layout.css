@@ -115,7 +115,7 @@
   max-width: 100%;
   justify-content: start;
   flex-wrap: wrap;
-  overflow-x: auto; /* allow horizontal scroll if viewport is too narrow */
+  overflow-x: auto;
 }
 
 /* ensure card widths match the grid column width */

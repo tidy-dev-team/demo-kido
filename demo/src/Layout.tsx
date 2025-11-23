@@ -1,6 +1,7 @@
 import './Layout.css'
 import Button from './components/Button'
 import Avatar from './components/Avatar'
+import Footer from './Footer'
 
 const sampleImages = [
     'https://picsum.photos/id/1018/800/450',
@@ -67,6 +68,8 @@ export default function Layout() {
                     ))}
                 </div>
             </section>
+
+            <Footer />
         </main>
     )
 }

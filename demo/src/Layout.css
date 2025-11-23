@@ -62,7 +62,9 @@
 }
 
 .kido-card {
-  width: 260px;
+  width: 245px;
+  min-width: 245px;
+  max-width: 245px;
   background: #fff;
   border: 1px solid #e6eef6;
   border-radius: 12px;
@@ -107,17 +109,17 @@
 }
 
 .kido-grid {
-  display: grid;
+  display: flex;
   /* fixed 5 columns so every row has exactly 5 cards */
-  grid-template-columns: repeat(5, 260px);
-  gap: 18px;
+  gap: 16px;
   max-width: 100%;
   justify-content: start;
+  flex-wrap: wrap;
   overflow-x: auto; /* allow horizontal scroll if viewport is too narrow */
 }
 
 /* ensure card widths match the grid column width */
-.kido-card { width: 260px }
+.kido-card { width: 245px }
 
 @media (max-width:800px) {
   .kido-search-input input {

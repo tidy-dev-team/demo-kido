@@ -62,7 +62,7 @@ export default function Layout() {
             <section className="kido-section">
                 <h2 className="kido-section-title">Your files</h2>
                 <div className="kido-grid">
-                    {Array.from({ length: 12 }).map((_, i) => (
+                    {Array.from({ length: 15 }).map((_, i) => (
                         <FileCard key={i} src={sampleImages[i % sampleImages.length]} title={`Image-file.png`} date={`Last modified | Oct 10, 2023`} />
                     ))}
                 </div>

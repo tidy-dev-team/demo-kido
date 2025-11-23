@@ -1,7 +1,6 @@
 import './Sidebar.css'
 import Button from './components/Button'
 import Avatar from './components/Avatar'
-import Footer from './components/Footer'
 import * as Icons from '@heroicons/react/24/outline'
 import type { SVGProps } from 'react'
 
@@ -104,9 +103,6 @@ export default function Sidebar() {
           <div className="kido-storage-meta">6.11GB / 10GB used</div>
         </div>
       </div>
-
-      {/* Add Footer at the very bottom of the sidebar, outside kido-bottom */}
-      <Footer />
     </aside>
   )
-
+}

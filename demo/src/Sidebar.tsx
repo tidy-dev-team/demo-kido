@@ -64,16 +64,45 @@ export default function Sidebar() {
       </div>
 
       <div className="kido-bottom">
-        <div className="kido-promo" role="region" aria-label="Promotion">
-          <div className="kido-promo-badge">50% off</div>
-          <div className="kido-promo-title">Black Friday!</div>
-          <div className="kido-promo-desc">This holiday season only, 50% off of all storage, billed annually for 2 years max.</div>
-          <div className="kido-promo-action">
-            <Button size="s" variant="contained">Buy Now</Button>
+        <ul className="kido-nav kido-nav-bottom" role="menu">
+          <li role="menuitem">
+            <Button size="s" variant="ghost" iconL={<SettingsIcon className="hi-icon" aria-hidden />}>Settings</Button>
+          </li>
+        </ul>
+
+        <div className="kido-storage">
+          <div className="kido-storage-head">
+            <div className="kido-storage-title">Your Storage</div>
+            <div className="kido-storage-amount">6.11GB</div>
           </div>
+
+          <div className="kido-storage-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={61}>
+            {
+              // Use a segmented track to match Figma (7 segments, partial fill supported)
+            }
+            {(() => {
+              const used = 6.11
+              const total = 10
+              const pct = Math.round((used / total) * 1000) / 10 // 61.1
+              const segments = 7
+              const perSeg = 100 / segments
+              const full = Math.floor(pct / perSeg)
+              const remainder = Math.max(0, Math.min(100, ((pct - full * perSeg) / perSeg) * 100))
+
+              return Array.from({ length: segments }).map((_, i) => {
+                const segFill = i < full ? 100 : (i === full ? remainder : 0)
+                return (
+                  <div className="kido-storage-seg" key={i} aria-hidden>
+                    <div className="kido-storage-seg-fill" style={{ width: `${segFill}%` }} />
+                  </div>
+                )
+              })
+            })()}
+          </div>
+
+          <div className="kido-storage-meta">6.11GB / 10GB used</div>
         </div>
       </div>
-      
     </aside>
   )
 }

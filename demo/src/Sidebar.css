@@ -2,7 +2,7 @@
 .kido-sidebar {
   position: sticky;
   top: 20px;
-	width: 320px;
+	width: 272px;
 	padding: 24px;
 	box-sizing: border-box;
 	background: #F3F5F6; /* rgb(0.9529,0.9569,0.9647) */
@@ -130,68 +130,6 @@
 .kido-storage-meta {
 	font-size: 10px;
 	color: #62748e; /* muted slate from Figma */
-}
-
-/* Promo card (Figma node 16:927) */
-.kido-promo {
-	background: #F9FBFC; /* Figma: r=0.97647 g=0.98039 b=0.98431 */
-	border-radius: 8px;
-	padding: 12px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	align-items: center;
-	text-align: center;
-	box-sizing: border-box;
-}
-
-.kido-promo-badge {
-	font-size: 14px; /* Figma: 14 */
-	font-weight: 500;
-	color: #0f172a; /* dark text */
-}
-
-.kido-promo-title {
-	/* Use a responsive size to avoid awkward wrapping in the 272px sidebar */
-	font-size: clamp(20px, 5vw, 36px);
-	font-weight: 600;
-	color: #0f172a;
-	line-height: 45px; /* keep Figma's line-height when at max size */
-	margin: 0;
-	word-break: normal;
-}
-
-.kido-promo-desc {
-	font-size: 16px; /* Figma: 16 */
-	color: rgb(69,85,108); /* approx from Figma r=0.2706 g=0.3333 b=0.4235 */
-	line-height: 22px; /* Figma lineHeightPx */
-}
-
-.kido-promo-action {
-	display: flex;
-	justify-content: center;
-	margin-top: 4px;
-	width: 100%;
-}
-
-.kido-promo-action .kido-btn.size-s.variant-contained {
-	width: 100%;
-	max-width: 220px; /* limit width to match visual in Figma */
-	min-height: 32px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* Center the label inside the promo CTA */
-.kido-promo-action .kido-btn {
-	justify-content: center; /* center icon+label horizontally */
-	text-align: center;
-}
-
-/* Keep Create New left-aligned inside controls */
-.kido-controls .kido-btn.size-s.variant-contained {
-	justify-content: flex-start;
-	text-align: left;
 }
 
 /* Small helpers */

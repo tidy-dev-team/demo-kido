@@ -70,12 +70,86 @@
 .kido-bottom {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   margin-top: auto; /* push this block to the bottom of the sidebar */
   justify-content: flex-end;
+  width: 100%;
 }
 
-.kido-nav-bottom { margin-bottom: 8px }
+.kido-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 0;
+}
+
+/* Footer promotional banner - design from Figma node 18:825 */
+.kido-footer {
+  background: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.kido-footer-discount {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #0f172b;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.kido-footer-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #0f172b;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.kido-footer-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #45556c;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.kido-footer-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.kido-footer-button .kido-btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.kido-nav-bottom { margin: 0 }
 
 .kido-storage {
 	display: flex;
@@ -88,17 +162,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	width: 100%;
 }
 
 .kido-storage-title {
 	font-size: 14px;
 	font-weight: 500;
-	color: #0f172a;
-}
-
-.kido-storage-amount {
-	font-size: 14px;
-	font-weight: 600;
 	color: #0f172a;
 }
 

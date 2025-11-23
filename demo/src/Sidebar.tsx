@@ -63,39 +63,20 @@ export default function Sidebar() {
         </ul>
       </div>
 
-      <div className="kido-bottom" data-node-id="18:805">
-        <div className="kido-footer-wrapper" data-node-id="18:824">
-          <div className="kido-footer" data-node-id="18:825">
-            <p className="kido-footer-discount" data-node-id="18:826">
-              50% off
-            </p>
-            <p className="kido-footer-heading" data-node-id="18:827">
-              Black Friday!
-            </p>
-            <p className="kido-footer-description" data-node-id="18:828">
-              This holiday season only, 50% off of all storage, billed annually for 2 years max.
-            </p>
-            <div className="kido-footer-button" data-node-id="18:829">
-              <Button size="s" variant="contained">
-                Buy Now
-              </Button>
-            </div>
-          </div>
-        </div>
-
+      <div className="kido-bottom">
         <ul className="kido-nav kido-nav-bottom" role="menu">
           <li role="menuitem">
             <Button size="s" variant="ghost" iconL={<SettingsIcon className="hi-icon" aria-hidden />}>Settings</Button>
           </li>
         </ul>
 
-        <div className="kido-storage" data-node-id="18:807">
-          <div className="kido-storage-head" data-node-id="18:808">
-            <div className="kido-storage-title" data-node-id="18:809">Your Storage</div>
-            <div className="kido-storage-meta" data-node-id="18:810">6.11GB/ 10GB used</div>
+        <div className="kido-storage">
+          <div className="kido-storage-head">
+            <div className="kido-storage-title">Your Storage</div>
+            <div className="kido-storage-amount">6.11GB</div>
           </div>
 
-          <div className="kido-storage-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={61} data-node-id="18:811">
+          <div className="kido-storage-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={61}>
             {
               // Use a segmented track to match Figma (7 segments, partial fill supported)
             }
@@ -118,6 +99,8 @@ export default function Sidebar() {
               })
             })()}
           </div>
+
+          <div className="kido-storage-meta">6.11GB / 10GB used</div>
         </div>
       </div>
     </aside>

@@ -64,17 +64,6 @@ export default function Sidebar() {
       </div>
 
       <div className="kido-bottom">
-        <div className="kido-footer">
-          <p className="kido-footer-discount">50% off</p>
-          <p className="kido-footer-heading">Black Friday!</p>
-          <p className="kido-footer-description">
-            This holiday season only, 50% off of all storage, billed annually for 2 years max.
-          </p>
-          <div className="kido-footer-button">
-            <Button size="s" variant="contained">Buy Now</Button>
-          </div>
-        </div>
-
         <ul className="kido-nav kido-nav-bottom" role="menu">
           <li role="menuitem">
             <Button size="s" variant="ghost" iconL={<SettingsIcon className="hi-icon" aria-hidden />}>Settings</Button>

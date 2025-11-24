@@ -19,36 +19,87 @@
   box-shadow: 0 0 0 4px rgba(91,75,255,0.12);
 }
 
-.kido-btn .kido-btn-icon { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px }
+.kido-btn .kido-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
 
-/* Heroicons sizing helper (used when passing <Icon className="hi-icon" />) */
-.hi-icon { width: 18px; height: 18px; display: inline-block; color: inherit }
+/* Heroicons sizing helper (used when passing <Icon className="hi-icon" / > ) */
+.hi-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  color: inherit;
+}
 
-.kido-btn.size-s { padding: 8px 12px; font-size: 14px }
-.kido-btn.size-m { padding: 10px 14px; font-size: 16px }
+.kido-btn.size-s {
+  padding: 8px 12px;
+  font-size: 14px;
+}
 
-.kido-btn.variant-contained { background: rgb(97,95,255); color: #fff }
-.kido-btn.variant-contained:hover { filter: brightness(.96); }
-.kido-btn.variant-contained:active { transform: translateY(0); filter: brightness(.92) }
+.kido-btn.size-m {
+  padding: 10px 14px;
+  font-size: 16px;
+}
 
-.kido-btn.variant-ghost { background: transparent; color: #0f172a }
+.kido-btn.variant-contained {
+  background: rgb(97,95,255);
+  color: #fff;
+}
+
+.kido-btn.variant-contained:hover {
+  filter: brightness(.96);
+}
+
+.kido-btn.variant-contained:active {
+  transform: translateY(0);
+  filter: brightness(.92);
+}
+
+.kido-btn.variant-ghost {
+  background: transparent;
+  color: #0f172a;
+}
 /* subtle light hover background for ghost buttons */
-.kido-btn.variant-ghost:hover { background: rgba(15,23,42,0.03); }
+.kido-btn.variant-ghost:hover {
+  background: rgba(15,23,42,0.03);
+}
+
 .kido-btn.variant-ghost:hover .kido-btn-label,
-.kido-btn.variant-ghost:hover .kido-btn-icon { color: inherit }
+  .kido-btn.variant-ghost:hover .kido-btn-icon {
+  color: inherit;
+}
 
 /* active/selected state mirrors Figma: light purple background + purple text/icon */
-.kido-btn.active.variant-ghost { background: rgba(91,75,255,0.12); color: #5b4bff }
-.kido-btn.active.variant-ghost .kido-btn-icon svg { color: #5b4bff }
+.kido-btn.active.variant-ghost {
+  background: rgba(91,75,255,0.12);
+  color: #5b4bff;
+}
+
+.kido-btn.active.variant-ghost .kido-btn-icon svg {
+  color: #5b4bff;
+}
 
 /* make sure SVG icons inherit the text color */
-.kido-btn .kido-btn-icon svg { width: 18px; height: 18px; color: inherit }
-
-@media (prefers-color-scheme: dark) {
-  .kido-btn.variant-ghost { color: #e6eef8 }
-  .kido-btn.variant-contained { background: #7c6bff }
-
+.kido-btn .kido-btn-icon svg {
+  width: 18px;
+  height: 18px;
+  color: inherit;
 }
+
+@media (prefers-color-scheme:dark) {
+  .kido-btn.variant-ghost {
+    color: #e6eef8;
+  }
+  
+  .kido-btn.variant-contained {
+    background: #7c6bff;
+  }
+}
+
 .kido-btn {
   display: inline-flex;
   align-items: center;
@@ -64,21 +115,55 @@
   text-align: left;
 }
 
-.kido-btn:focus { outline: 3px solid rgba(91,75,255,0.18); }
+.kido-btn:focus {
+  outline: 3px solid rgba(91,75,255,0.18);
+}
 
-.kido-btn .kido-btn-icon { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px }
+.kido-btn .kido-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
 
-.hi-icon { width: 18px; height: 18px; display: inline-block }
+.hi-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
 
-.kido-btn.size-s { padding: 8px 12px; font-size: 14px }
-.kido-btn.size-m { padding: 10px 14px; font-size: 16px }
+.kido-btn.size-s {
+  padding: 8px 12px;
+  font-size: 14px;
+}
 
-.kido-btn.variant-contained { background: rgb(97,95,255); color: #fff }
-.kido-btn.variant-ghost { background: transparent; color: #0f172a }
+.kido-btn.size-m {
+  padding: 10px 14px;
+  font-size: 16px;
+}
 
-.kido-btn.active.variant-ghost { background: rgba(91,75,255,0.12); color: #5b4bff }
+.kido-btn.variant-contained {
+  background: rgb(97,95,255);
+  color: #fff;
+}
 
-@media (prefers-color-scheme: dark) {
-  .kido-btn.variant-ghost { color: #e6eef8 }
-  .kido-btn.variant-contained { background: #7c6bff }
+.kido-btn.variant-ghost {
+  background: transparent;
+  color: #0f172a;
+}
+
+.kido-btn.active.variant-ghost {
+  background: rgba(91,75,255,0.12);
+  color: #5b4bff;
+}
+
+@media (prefers-color-scheme:dark) {
+  .kido-btn.variant-ghost {
+    color: #e6eef8;
+  }
+  
+  .kido-btn.variant-contained {
+    background: #7c6bff;
+  }
 }

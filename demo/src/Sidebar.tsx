@@ -64,9 +64,12 @@ export default function Sidebar() {
       </div>
 
       <div className="kido-bottom">
+<<<<<<< HEAD
         <div className="kido-footer">
         </div>
 
+=======
+>>>>>>> parent of fed99d7 (Cursor update)
         <ul className="kido-nav kido-nav-bottom" role="menu">
           <li role="menuitem">
             <Button size="s" variant="ghost" iconL={<SettingsIcon className="hi-icon" aria-hidden />}>Settings</Button>

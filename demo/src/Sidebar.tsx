@@ -64,15 +64,7 @@ export default function Sidebar() {
       </div>
 
       <div className="kido-bottom">
-        <div className="kido-footer" data-node-id="18:825">
-          <p className="kido-footer-discount" data-node-id="18:826">50% off</p>
-          <p className="kido-footer-heading" data-node-id="18:827">Black Friday!</p>
-          <p className="kido-footer-description" data-node-id="18:828">
-            This holiday season only, 50% off of all storage, billed annually for 2 years max.
-          </p>
-          <div className="kido-footer-button" data-node-id="18:829">
-            <Button size="s" variant="contained">Buy Now</Button>
-          </div>
+        <div className="kido-footer">
         </div>
 
         <ul className="kido-nav kido-nav-bottom" role="menu">

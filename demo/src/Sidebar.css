@@ -75,61 +75,6 @@
   justify-content: flex-end;
 }
 
-/* kido-footer banner (Figma node 18:824/18:825) */
-.kido-footer {
-  background: #ffffff;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  padding: 12px;
-  border-radius: 8px;
-  width: 100%;
-}
-
-.kido-footer-discount {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #0f172b;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
-
-.kido-footer-heading {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 1.25;
-  color: #0f172b;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
-
-.kido-footer-description {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #45556c;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-}
-
-.kido-footer-button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.kido-footer-button .kido-btn {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
 .kido-nav-bottom { margin-bottom: 8px }
 
 .kido-storage {

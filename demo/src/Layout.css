@@ -52,6 +52,7 @@
 .kido-section-title {
   font-size: var(--pixel-28);
   margin: 0 0 var(--pixel-12) 0;
+  font-weight: 600;
 }
 
 .kido-recent-row {

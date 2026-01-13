@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&display=swap');
+
 :root {
   /* Colors */
   --primary-color: #615fff;
@@ -18,4 +20,8 @@
   --pixel-20: 20px;
   --pixel-24: 24px;
   --pixel-28: 28px;
+  /* Typography */
+  --choosen-font: "Inter";
+  /* --choosen-font: "Raleway"; */
+  /* --choosen-font: "Sanchez"; */
 }

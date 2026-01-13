@@ -1,5 +1,6 @@
 :root {
   font-family: var(--choosen-font);
+  font-size: var(--base-font);
   line-height: 1.5;
   font-weight: 400;
 }

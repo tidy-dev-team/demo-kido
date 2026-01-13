@@ -21,6 +21,7 @@
   --pixel-24: 24px;
   --pixel-28: 28px;
   /* Typography */
+  --base-font: 10px;
   --choosen-font: "Inter";
   /* --choosen-font: "Raleway"; */
   /* --choosen-font: "Sanchez"; */

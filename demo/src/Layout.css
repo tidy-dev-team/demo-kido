@@ -1,5 +1,5 @@
 .kido-layout {
-  padding: var(--pixel-24);
+  padding: 0 var(--pixel-24);
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -37,12 +37,12 @@
 }
 
 .kido-user-name {
-  font-weight: 600;
+  font-size: 1.6em;
 }
 
 .kido-user-sub {
-  color: #64748b;
-  font-size: 13px;
+  color: #45556C;
+  font-size: 1.4em;
 }
 
 .kido-section {
@@ -50,7 +50,7 @@
 }
 
 .kido-section-title {
-  font-size: var(--pixel-28);
+  font-size: 2.8em;
   margin: 0 0 var(--pixel-12) 0;
   font-weight: 600;
 }
@@ -92,7 +92,7 @@
   padding: var(--pixel-4) var(--pixel-8);
   border-radius: 999px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .kido-card-body {
@@ -106,7 +106,7 @@
 
 .kido-file-meta {
   color: #64748b;
-  font-size: 13px;
+  font-size: 1.3em;
 }
 
 .kido-grid {
@@ -130,6 +130,6 @@
   }
   
   .kido-section-title {
-    font-size: 20px;
+    font-size: 2em;
   }
 }

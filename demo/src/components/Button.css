@@ -37,12 +37,12 @@
 
 .kido-btn.size-s {
   padding: var(--pixel-8) var(--pixel-12);
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .kido-btn.size-m {
   padding: var(--pixel-10) var(--pixel-14);
-  font-size: 16px;
+  font-size: 1.6em;
 }
 
 .kido-btn.variant-contained {
@@ -125,12 +125,12 @@
 
 .kido-btn.size-s {
   padding: var(--pixel-8) var(--pixel-12);
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .kido-btn.size-m {
   padding: var(--pixel-10) var(--pixel-14);
-  font-size: 16px;
+  font-size: 1.6em;
 }
 
 .kido-btn.variant-ghost {

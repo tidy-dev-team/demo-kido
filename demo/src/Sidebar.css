@@ -21,7 +21,7 @@
 }
 
 .kido-title {
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -40,7 +40,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 1.4em;
 }
 
 .kido-nav {
@@ -98,7 +98,7 @@
 }
 
 .kido-footer-discount {
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 500;
   line-height: 1.4;
   color: #0f172b;
@@ -108,7 +108,7 @@
 }
 
 .kido-footer-heading {
-  font-size: 24px;
+  font-size: 2.4em;
   font-weight: 600;
   line-height: 1.25;
   color: #0f172b;
@@ -118,7 +118,7 @@
 }
 
 .kido-footer-description {
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 500;
   line-height: 1.4;
   color: #45556c;
@@ -157,13 +157,13 @@
 }
 
 .kido-storage-title {
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 500;
   color: var(--text-color);
 }
 
 .kido-storage-amount {
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 600;
   color: var(--text-color);
 }
@@ -195,7 +195,7 @@
 }
 
 .kido-storage-meta {
-  font-size: 10px;
+  font-size: 1em;
   color: #62748e;
   /* muted slate from Figma */
 }

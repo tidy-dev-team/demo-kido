@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.css'
 
-type Size = 's' | 'm'
+type Size = 's' | 'm' | 'l'
 type Variant = 'contained' | 'ghost'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

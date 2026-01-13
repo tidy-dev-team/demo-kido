@@ -45,6 +45,11 @@
   font-size: 1.6em;
 }
 
+.kido-btn.size-l {
+  padding: var(--pixel-14) var(--pixel-20);
+  font-size: 1.6em;
+}
+
 .kido-btn.variant-contained {
   background: var(--primary-color);
   color: var(--color-light-0);

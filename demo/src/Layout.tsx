@@ -34,10 +34,10 @@ export default function Layout() {
             <header className="kido-header">
                 <div className="kido-search-row">
                     <div className="kido-search-input">
-                        <input placeholder="Search in Kido" />
+                        <input type='text' placeholder="Search in Kido" />
                     </div>
                     <div className="kido-search-action">
-                        <Button size="m" variant="contained">Search Now</Button>
+                        <Button size="l" variant="contained">Search Now</Button>
                     </div>
                 </div>
 

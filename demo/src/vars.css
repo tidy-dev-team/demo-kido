@@ -9,6 +9,8 @@
   --color-light-0: #ffffff;
   --color-light-100: #e6eef6;
   --sidebar-color: #F3F5F6;
+
+
   /* Spacings */
   --pixel-4: 4px;
   --pixel-8: 8px;
@@ -20,6 +22,8 @@
   --pixel-20: 20px;
   --pixel-24: 24px;
   --pixel-28: 28px;
+
+  
   /* Typography */
   --base-font: 10px;
   --choosen-font: "Inter";

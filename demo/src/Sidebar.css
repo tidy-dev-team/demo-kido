@@ -2,82 +2,90 @@
 .kido-sidebar {
   position: sticky;
   top: 20px;
-	width: 320px;
-	padding: 24px;
-	box-sizing: border-box;
-	background: #F3F5F6; /* rgb(0.9529,0.9569,0.9647) */
-	border-radius: 12px;
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-	height: calc(100vh - 40px);
+  width: 320px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: var(--sidebar-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: calc(100vh - 40px);
 }
 
 .kido-top {
-	display: flex;
-	align-items: center;
-	gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .kido-title {
-	font-size: 14px;
-	font-weight: 500;
-	color: #0f172a;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
 .kido-controls {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .kido-controls .kido-btn.size-s.variant-contained {
-	height: 32px;
-	min-height: 32px;
-	border-radius: 8px;
-	padding: 0 12px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
+  height: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
 }
 
 .kido-nav {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.kido-nav li { margin: 0 }
+.kido-nav li {
+  margin: 0;
+}
 
 .kido-nav .kido-btn {
-	height: 32px;
-	min-height: 32px;
-	border-radius: 8px;
-	padding-left: 12px;
-	padding-right: 12px;
-	display: inline-flex;
-	align-items: center;
+  height: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: inline-flex;
+  align-items: center;
 }
 
-.kido-nav .kido-btn .hi-icon { width: 18px; height: 18px }
+.kido-nav .kido-btn .hi-icon {
+  width: 18px;
+  height: 18px;
+}
 
-.kido-nav .kido-btn .kido-btn-label { flex: 1 }
+.kido-nav .kido-btn .kido-btn-label {
+  flex: 1;
+}
 
 .kido-bottom {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: auto; /* push this block to the bottom of the sidebar */
+  margin-top: auto;
+  /* push this block to the bottom of the sidebar */
   justify-content: flex-end;
 }
 
 /* Footer promotional banner (Figma node 18:825) */
 .kido-footer {
-  background: #ffffff;
+  background: var(--color-light-0);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -130,47 +138,52 @@
   text-align: center;
 }
 
-.kido-nav-bottom { margin-bottom: 8px }
+.kido-nav-bottom {
+  margin-bottom: 8px;
+}
 
 .kido-storage {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 0 14px;
 }
 
 .kido-storage-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .kido-storage-title {
-	font-size: 14px;
-	font-weight: 500;
-	color: #0f172a;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
 }
 
 .kido-storage-amount {
-	font-size: 14px;
-	font-weight: 600;
-	color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .kido-storage-bar {
-	width: 100%;
-	height: 4px; /* thin progress track as in Figma */
-	background: rgba(15,23,42,0.06);
-	border-radius: 999px;
-	overflow: hidden;
-	display: flex; /* segmented track */
-	gap: 0;
+  width: 100%;
+  height: 4px;
+  /* thin progress track as in Figma */
+  background: rgba(15,23,42,0.06);
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  /* segmented track */
+  gap: 0;
 }
 
 .kido-storage-seg {
   flex: 1 1 0;
   position: relative;
-  min-width: 0; /* ensure fills truncate correctly */
+  min-width: 0;
+  /* ensure fills truncate correctly */
 }
 
 .kido-storage-seg-fill {
@@ -179,18 +192,25 @@
   top: 0;
   bottom: 0;
   width: 0%;
-  background: rgb(97,95,255); /* #615FFF */
+  background: var(--primary-color);
 }
 
 .kido-storage-meta {
-	font-size: 10px;
-	color: #62748e; /* muted slate from Figma */
+  font-size: 10px;
+  color: #62748e;
+  /* muted slate from Figma */
 }
 
 /* Small helpers */
-.hi-icon { width: 18px; height: 18px; display: inline-block }
+.hi-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
 
-@media (max-width: 640px) {
-	.kido-sidebar { width: 240px }
+@media (max-width:640px) {
+  .kido-sidebar {
+    width: 240px;
+  }
 }
 

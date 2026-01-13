@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+body {
+  background-color: var(--color-light-0);
+  color: var(--text-color);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

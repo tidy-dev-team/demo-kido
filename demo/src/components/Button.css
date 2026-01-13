@@ -1,8 +1,3 @@
-:root {
-  --primary-color: #615fff;
-  --color-light: #ffffff;
-}
-
 .kido-btn {
   display: inline-flex;
   align-items: center;
@@ -52,7 +47,7 @@
 
 .kido-btn.variant-contained {
   background: var(--primary-color);
-  color: var(--color-light);
+  color: var(--color-light-0);
 }
 
 .kido-btn.variant-contained:hover {
@@ -66,7 +61,7 @@
 
 .kido-btn.variant-ghost {
   background: transparent;
-  color: #0f172a;
+  color: var(--text-color);
 }
 /* subtle light hover background for ghost buttons */
 .kido-btn.variant-ghost:hover {
@@ -81,11 +76,11 @@
 /* active/selected state mirrors Figma: light purple background + purple text/icon */
 .kido-btn.active.variant-ghost {
   background: rgba(91,75,255,0.12);
-  color: #5b4bff;
+  color: var(--color-ghost);
 }
 
 .kido-btn.active.variant-ghost .kido-btn-icon svg {
-  color: #5b4bff;
+  color: var(--color-ghost);
 }
 
 /* make sure SVG icons inherit the text color */
@@ -93,16 +88,6 @@
   width: 18px;
   height: 18px;
   color: inherit;
-}
-
-@media (prefers-color-scheme:dark) {
-  .kido-btn.variant-ghost {
-    color: #e6eef8;
-  }
-  
-  .kido-btn.variant-contained {
-    background: #7c6bff;
-  }
 }
 
 .kido-btn {
@@ -150,20 +135,10 @@
 
 .kido-btn.variant-ghost {
   background: transparent;
-  color: #0f172a;
+  color: var(--text-color);
 }
 
 .kido-btn.active.variant-ghost {
   background: rgba(91,75,255,0.12);
-  color: #5b4bff;
-}
-
-@media (prefers-color-scheme:dark) {
-  .kido-btn.variant-ghost {
-    color: #e6eef8;
-  }
-  
-  .kido-btn.variant-contained {
-    background: #7c6bff;
-  }
+  color: var(--color-ghost);
 }

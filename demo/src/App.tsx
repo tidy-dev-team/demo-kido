@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div style={{ display: "flex", width: "calc(100% - 40px)", padding: "20px"}}>
+      <div style={{ display: "flex", width: "calc(100% - (var(--pixel-20) * 2))", padding: "var(--pixel-20)"}}>
         <Sidebar></Sidebar>
         <Layout></Layout>
       </div>

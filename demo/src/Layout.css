@@ -1,5 +1,5 @@
 .kido-layout {
-  padding: 24px;
+  padding: var(--pixel-24);
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -8,20 +8,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: var(--pixel-16);
+  margin-bottom: var(--pixel-20);
 }
 
 .kido-search-row {
   display: flex;
-  gap: 12px;
+  gap: var(--pixel-12);
   align-items: center;
 }
 
 .kido-search-input input {
   width: 420px;
-  padding: 11px 12px;
-  border-radius: 8px;
+  padding: calc(var(--pixel-12) - 1px) var(--pixel-12);
+  border-radius: var(--pixel-8);
   border: 1px solid var(--color-light-100);
   background: #f8fafc;
 }
@@ -29,7 +29,7 @@
 .kido-user {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--pixel-12);
 }
 
 .kido-user-details {
@@ -46,19 +46,19 @@
 }
 
 .kido-section {
-  margin-top: 28px;
+  margin-top: var(--pixel-28);
 }
 
 .kido-section-title {
-  font-size: 28px;
-  margin: 0 0 12px 0;
+  font-size: var(--pixel-28);
+  margin: 0 0 var(--pixel-12) 0;
 }
 
 .kido-recent-row {
   display: flex;
-  gap: 16px;
+  gap: var(--pixel-16);
   overflow-x: auto;
-  padding-bottom: 8px;
+  padding-bottom: var(--pixel-8);
 }
 
 .kido-card {
@@ -67,7 +67,7 @@
   max-width: 245px;
   background: var(--color-light-0);
   border: 1px solid var(--color-light-100);
-  border-radius: 12px;
+  border-radius: var(--pixel-12);
   overflow: hidden;
   box-shadow: 0 1px 0 rgba(16,24,40,0.03);
 }
@@ -85,22 +85,22 @@
 
 .kido-badge {
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: var(--pixel-12);
+  top: var(--pixel-12);
   background: var(--color-light-100);
-  padding: 4px 8px;
+  padding: var(--pixel-4) var(--pixel-8);
   border-radius: 999px;
   font-weight: 600;
   font-size: 12px;
 }
 
 .kido-card-body {
-  padding: 12px;
+  padding: var(--pixel-12);
 }
 
 .kido-file-title {
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-bottom: var(--pixel-4);
 }
 
 .kido-file-meta {
@@ -111,7 +111,7 @@
 .kido-grid {
   display: flex;
   flex-direction: row-reverse;
-  gap: 16px;
+  gap: var(--pixel-16);
   max-width: 100%;
   justify-content: start;
   flex-wrap: wrap;

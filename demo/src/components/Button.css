@@ -1,10 +1,10 @@
 .kido-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--pixel-10);
   border: none;
-  padding: 8px 12px;
-  border-radius: 10px;
+  padding: var(--pixel-8) var(--pixel-12);
+  border-radius: var(--pixel-10);
   background: transparent;
   color: inherit;
   font-weight: 500;
@@ -23,25 +23,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: var(--pixel-20);
+  height: var(--pixel-20);
 }
 
 /* Heroicons sizing helper (used when passing <Icon className="hi-icon" / > ) */
 .hi-icon {
-  width: 18px;
-  height: 18px;
+  width: var(--pixel-18);
+  height: var(--pixel-18);
   display: inline-block;
   color: inherit;
 }
 
 .kido-btn.size-s {
-  padding: 8px 12px;
+  padding: var(--pixel-8) var(--pixel-12);
   font-size: 14px;
 }
 
 .kido-btn.size-m {
-  padding: 10px 14px;
+  padding: var(--pixel-10) var(--pixel-14);
   font-size: 16px;
 }
 
@@ -85,18 +85,18 @@
 
 /* make sure SVG icons inherit the text color */
 .kido-btn .kido-btn-icon svg {
-  width: 18px;
-  height: 18px;
+  width: var(--pixel-18);
+  height: var(--pixel-18);
   color: inherit;
 }
 
 .kido-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--pixel-10);
   border: none;
-  padding: 8px 12px;
-  border-radius: 10px;
+  padding: var(--pixel-8) var(--pixel-12);
+  border-radius: var(--pixel-10);
   background: transparent;
   color: inherit;
   font-weight: 500;
@@ -113,23 +113,23 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: var(--pixel-20);
+  height: var(--pixel-20);
 }
 
 .hi-icon {
-  width: 18px;
-  height: 18px;
+  width: var(--pixel-18);
+  height: var(--pixel-18);
   display: inline-block;
 }
 
 .kido-btn.size-s {
-  padding: 8px 12px;
+  padding: var(--pixel-8) var(--pixel-12);
   font-size: 14px;
 }
 
 .kido-btn.size-m {
-  padding: 10px 14px;
+  padding: var(--pixel-10) var(--pixel-14);
   font-size: 16px;
 }
 

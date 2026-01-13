@@ -1,22 +1,23 @@
 /* Sidebar layout and tokens derived from Figma node 14:269 */
 .kido-sidebar {
   position: sticky;
-  top: 20px;
+  top: var(--pixel-20);
   width: 320px;
-  padding: 24px;
+  padding: var(--pixel-24);
   box-sizing: border-box;
   background: var(--sidebar-color);
-  border-radius: 12px;
+  border-radius: var(--pixel-12);
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  height: calc(100vh - 40px);
+  gap: var(--pixel-24);
+  height: calc(100vh - (var(--pixel-20) * 2));
+  overflow: auto;
 }
 
 .kido-top {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--pixel-12);
 }
 
 .kido-title {
@@ -28,14 +29,14 @@
 .kido-controls {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--pixel-12);
 }
 
 .kido-controls .kido-btn.size-s.variant-contained {
   height: 32px;
   min-height: 32px;
-  border-radius: 8px;
-  padding: 0 12px;
+  border-radius: var(--pixel-8);
+  padding: 0 var(--pixel-12);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--pixel-8);
 }
 
 .kido-nav li {
@@ -58,16 +59,16 @@
 .kido-nav .kido-btn {
   height: 32px;
   min-height: 32px;
-  border-radius: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
+  border-radius: var(--pixel-8);
+  padding-left: var(--pixel-12);
+  padding-right: var(--pixel-12);
   display: inline-flex;
   align-items: center;
 }
 
 .kido-nav .kido-btn .hi-icon {
-  width: 18px;
-  height: 18px;
+  width: var(--pixel-18);
+  height: var(--pixel-18);
 }
 
 .kido-nav .kido-btn .kido-btn-label {
@@ -77,7 +78,7 @@
 .kido-bottom {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--pixel-16);
   margin-top: auto;
   /* push this block to the bottom of the sidebar */
   justify-content: flex-end;
@@ -89,10 +90,10 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--pixel-12);
   align-items: center;
-  padding: 12px;
-  border-radius: 8px;
+  padding: var(--pixel-12);
+  border-radius: var(--pixel-8);
   width: 100%;
 }
 
@@ -139,14 +140,14 @@
 }
 
 .kido-nav-bottom {
-  margin-bottom: 8px;
+  margin-bottom: var(--pixel-8);
 }
 
 .kido-storage {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 0 14px;
+  gap: var(--pixel-8);
+  padding: 0 var(--pixel-14);
 }
 
 .kido-storage-head {
@@ -175,8 +176,6 @@
   border-radius: 999px;
   overflow: hidden;
   display: flex;
-  /* segmented track */
-  gap: 0;
 }
 
 .kido-storage-seg {
@@ -203,8 +202,8 @@
 
 /* Small helpers */
 .hi-icon {
-  width: 18px;
-  height: 18px;
+  width: var(--pixel-18);
+  height: var(--pixel-18);
   display: inline-block;
 }
 

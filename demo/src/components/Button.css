@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #615fff;
+  --color-light: #ffffff;
+}
+
 .kido-btn {
   display: inline-flex;
   align-items: center;
@@ -46,8 +51,8 @@
 }
 
 .kido-btn.variant-contained {
-  background: rgb(97,95,255);
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--color-light);
 }
 
 .kido-btn.variant-contained:hover {
@@ -141,11 +146,6 @@
 .kido-btn.size-m {
   padding: 10px 14px;
   font-size: 16px;
-}
-
-.kido-btn.variant-contained {
-  background: rgb(97,95,255);
-  color: #fff;
 }
 
 .kido-btn.variant-ghost {
